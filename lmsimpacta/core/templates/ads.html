@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<!-- AUTOR:
+Gustavo Balieiro 1520138
+Luan Millian Gonçalves
+ DATA = 29/08/2017-->
+<title>USF</title> 
+<link rel="stylesheet" href="/static/site.css"
+<meta charset="utf-8"/>
+</head>
+	
+	<!-- MediaQuery -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<!-- /MediaQuery -->
+
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css" media="all" />
+  
+   	<link rel="stylesheet" href="css/cont-cursos.css">
+  
+    <!-- jQuery -->
+    <script src="js/formatar-data-tel.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script> 
+    
+	<!-- Adicionar HEADER e FOOTER-->
+	<script>
+	$(function() {
+		$(".addheader").load("header.html");
+		$(".addfooter").load("footer.html");
+	})
+	</script>
+	<!-- /Adicionar HEADER e FOOTER-->
+	
+	<!-- Efeito de toggle mostrar e esconder -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+<!-- Script JQuery Toggle -->
+		<script>
+		$(document).ready(function()
+		{
+		$(".mostrar").hide();
+		$(".semestre").click(function()
+		{
+		$(this).next(".mostrar").slideToggle(600);
+		});
+		});
+		</script>
+<!-- Fim Script JQuery Toggle -->
+
+	
+	<!-- /Efeito de toggle mostrar e esconder -->
+	
+	<!-- /Java Script -->
+
+		
+
+<body>
+
+	
+<header>
+       
+       <div class="addheader"></div>
+		
+</header> 
+<main>
+        {%extends 'base.html' %}
+        {% block main %}
+
+ 
+ 		<div class="img_cursos">
+			<img src="img/cursos/ads.jpg">
+			
+				<div class="caixa_curs">
+					<div class="titulo_curs">
+						<h2>ANÁLISE E DESENVOLVIMENTO DE SISTEMAS</h2>
+					</div>
+					<div class="sep_ban">... </div>
+				</div>
+		</div>
+ <section> 
+
+		<div class="conteudo_cur">
+		
+		
+
+	<p><h2><strong>SOBRE O CURSO</strong> </h2>
+	<div class="sepContainer2"></div>
+		<p> O curso forma profissionais conhecidos como <b>Analista de Sistemas ou Desenvolvedor de Sistemas.</b>  São esses profissionais que criam os sistemas com os quais você já teve contato: sistemas de comércio eletrônico, sistemas de redes sociais, web sites, apenas para citar alguns.</p>
+ 
+		<p> Que tal fazer parte desse grupo seleto de profissionais? O melhor caminho para isso é aprender de forma gradativa, resolvendo problemas do simples ao complexo, participando ativamente de projetos reais com clientes reais, além de ter como professores os melhores profissionais de mercado.</p>
+
+		<p>Você também aprenderá a trabalhar em equipe, analisando e desenvolvendo sistemas para internet, tablets, celulares e Internet das Coisas (IoT), utilizando ambientes DevOps, linguagens e tecnologias de alta-produtividade e de melhor custo-benefício </p>
+</p>
+	 
+	 <div class="info_curso">
+		 <div class="img_curso_desc">
+			<img src="img/cursos/relogio.png">
+		 </div>
+				<div class="text">
+					<p>
+						Periodo:<br>
+					 <b>Noturno</b>
+					 
+					</p>
+		 </div>
+	 </div>
+	 
+	 <div class="info_curso">
+		 <div class="img_curso_desc">
+			<img src="img/cursos/calendario.png">
+		 </div>
+				<div class="text">
+					<p>
+						Duração:<br>
+					 <b>4 semestres</b>
+					 
+					</p>
+				</div>
+		 </div>
+	 </div>
+	 		
+	 		
+	
+
+
+		
+		<div class="conteudo_cur">
+		
+		
+
+	<p><h2><strong>QUERO MAIS INFORMAÇÕES</strong> </h2>
+	<div class="sepContainer2"></div>
+		
+</p>
+		<form class="maisinfo" id="form" name="form" method="post" action="?">		
+		<div class="form-grop">
+			<label class="text-info">Nome*</label>
+			<input type="text" class="form-control" placeholder="Insira seu nome" required>
+		</div>
+		
+		<div class="form-grop">
+			<label class="text-info">E-mail*</label>
+			<input type="email" class="form-control" placeholder="Insira seu e-mail" required>
+		</div>
+		
+		<div class="form-grop">
+			<label class="text-info">Telefone*</label>
+			<input name="telefone"  class="form-control"  type="text" id="telefone" placeholder="(##) ####-####" maxLength="14" onKeyPress="fone(this,document.form.data);return Apenas_Numeros(event);" required>	
+		</div>
+	</form>
+		
+		<button type="button" class="bnt-info">Enviar</button>
+
+		</div>
+		
+				
+		<div class="grade">
+		<div class="semestre">
+ 		01º Semestre </div>
+		<div class="mostrar">
+		<div class="col-grade"><p>Comunicação e Expressão</p></div>
+		<div class="col-grade"><p>Fundamentos da Administração</p></div>
+		<div class="col-grade"><p>Introdução a Internet das Coisas - IoT</p></div>
+		<div class="col-grade"><p>Linguagem de Programação I</p></div>
+		<div class="col-grade"><p>Lógica de Programação</p></div>
+		<div class="col-grade"><p>Matemática Aplicada</p></div>
+		</div>
+		</div>
+		
+		<div class="grade">
+		<div class="semestre">
+ 		02º Semestre </div>
+		<div class="mostrar">
+		<div class="col-grade"><p>Ambiente de Desenvolvimento e Operação - DevOps</p></div>
+		<div class="col-grade"><p>Engenharia de Software</p></div>
+		<div class="col-grade"><p>Gestão de Projetos</p></div>
+		<div class="col-grade"><p>Língua Brasileira de Sinais - LIBRAS (Optativa)</p></div>
+		<div class="col-grade"><p>Linguagem de Programação II</p></div>
+		<div class="col-grade"><p>Linguagem SQL</p></div>
+		<div class="col-grade"><p>Sociedade e Sustentabilidade (Optativa)</p></div>
+		<div class="col-grade"><p>Tecnologia Web</p></div>
+		</div>
+		</div>
+		
+		<div class="grade">
+		<div class="semestre">
+ 		03º Semestre </div>
+		<div class="mostrar">
+		<div class="col-grade"><p>Análise e Modelagem de Sistemas</p></div>
+		<div class="col-grade"><p>Desenvolvimento de Aplicações Distribuídas</p></div>
+		<div class="col-grade"><p>Estrutura de Dados</p></div>
+		<div class="col-grade"><p>Interface Homem-Computador</p></div>
+		<div class="col-grade"><p>Modelagem de Processos de Negócio</p></div>
+		<div class="col-grade"><p>Oficina de Projeto de Empresa 1 - OPE1</p></div>
+		</div>
+		</div>
+		
+		<div class="grade">
+		<div class="semestre">
+ 		04º Semestre </div>
+		<div class="mostrar">
+		<div class="col-grade"><p>Arquitetura e Projeto de Sistemas</p></div>
+		<div class="col-grade"><p>Desenvolvimento para Dispositivos Móveis</p></div>
+		<div class="col-grade"><p>Desenvolvimento para Internet das Coisas - IoT</p></div>
+		<div class="col-grade"><p>Legislação e Ética</p></div>
+		<div class="col-grade"><p>Oficina de Projeto de Empresa 2 - OPE2</p></div>
+		<div class="col-grade"><p>Qualidade de Software</p></div>
+		</div>
+		</div>
+		
+		
+ 
+	
+
+	
+	
+	
+</section>  
+
+{% endblock %}
+</main>>	
+
+
+
+
+<footer>
+	
+		<div class="addfooter"></div>
+         
+</footer>
+
+
+</body>
+
+
+
+</html>
