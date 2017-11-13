@@ -15,11 +15,11 @@
 	<!-- /MediaQuery -->
 	
 	<!-- CSS's -->
-	<link rel="stylesheet" type="text/css" href="css/estilo.css">
-	<link rel="stylesheet" href="css/base.css">
-	<link rel="stylesheet" type="text/css" href="css/styles.css" media="all" />
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/menuresponsivo.css">
+	<link rel="stylesheet" type="text/css" href="/static/estilo.css">
+	<link rel="stylesheet" href="/static/base.css">
+	<link rel="stylesheet" type="text/css" href="/static/styles.css" media="all" />
+    <link rel="stylesheet" href="/static/normalize.css">
+    <link rel="stylesheet" href="/static/menuresponsivo.css">
     <!-- /CSS's -->
   
     <!-- Java Script -->    
@@ -27,7 +27,7 @@
      
     
     <!-- SLIDE -->
-    <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>    
+    <script type="text/javascript" src="/static/jquery.flexslider-min.js"></script>    
     <script type="text/javascript" charset="utf-8">
 				$(function() {
 		$(".addheader").load("header.html");
@@ -71,7 +71,7 @@
 	
 	
 <header>
-       
+	
    <div class="menu-container">
 				
 			<ul class="menu">
@@ -82,7 +82,7 @@
 						
 							<div class="alinhar">
 							<li><a href="institucional.html">Institucional</a></li>
-							<li><a href="#">Cursos</a>
+							<li><a href="#">Curso</a>
 							
 								
 									<ul class="sub-menu">
@@ -95,6 +95,7 @@
 									</ul>
 
 							 </li>
+							 
 						<li><a href="#">Estude na USF</a></li>
 						<li><a href="noticias.html">Noticias</a></li>
 						<li><a href="contato.html">Contato</a></li>
@@ -102,13 +103,14 @@
 					
 					</div>
 					
-					
 				
-	 		</ul>
-	 		
+					
+					
+			 </ul>
+			
 	 		<ul class="menuadd">
             	
-            		<a href="#autenticação"><img class="imglog" src="img/autenticacao-login.png" alt="autenticação"></a>
+            		<a href="#autenticação"><img class="imglog" src="/static/autenticacao-login.png" alt="autenticação"></a>
 						
 						<div id="autenticação" class="lightbox">
 							
@@ -134,12 +136,11 @@
 								
             	
             </ul>
-	 		
-	 		
+			
 	 		<nav class="menurepon menurepon-right" data-focus="#first-link">
             <div class="menurepon-content">
                 <ul>
-                   <li class="menurepon-link"><a href="institucional.html">Instituição</a></li>
+                   <li class="menurepon-link"><a href="institucional.html">Institucional</a></li>
                    <li class="menurepon-submenu">
                         <button id="first-link">Cursos</button>
                         <ul>
@@ -151,7 +152,8 @@
                     </li>
                     <li class="menurepon-link"><a href="#">Estude na USF</a></li>
                     <li class="menurepon-link"><a href="noticias.html">Noticias</a></li>
-                    <li class="menurepon-link"><a href="contato.html">Contato</a></li>
+					<li class="menurepon-link"><a href="contato.html">Contato</a></li>
+				
                     <li class="loginrespon">
                         
                         
@@ -184,7 +186,7 @@
                 
             </div>
             
-            
+	
             
         </nav>
 
@@ -214,7 +216,7 @@
 				<ul class="slides">
 
 					<li>
-					<a href="#"><img src="/static/slider/slide1.jpg" alt="" title=""/></a>
+					<a href="#"><img src="/static/slide1.jpg" alt="" title=""/></a>
 						<div class="caixa">
 							 <div class="titulo">
 							 <h2>Administração</h2><p> Seja mais do que somente mais um administrador do mercado. Faça um curso reconhecido pelo MEC com conceito máximo </p>
@@ -223,7 +225,7 @@
 					</li>
 
 					<li>
-					<a href="#"><img src="/static/slider/slide2.jpg" alt="" title=""/></a>
+					<a href="#"><img src="/static/slide2.jpg" alt="" title=""/></a>
 						<div class="caixa">
 							 <div class="titulo">
 							 <h2>Nutrição</h2><p>O curso de nutrição da universidade paulista tem como objetivos formar nutricionistas com conhecimentos, competências e habilidades</p></div>
@@ -235,10 +237,7 @@
 		 </div>
 	</div>  
 </header> 
-<main>
-    {%extends 'base.html' %}
 
-    {% block main %}
   
 <section> 
 		<div class="conteudo">
@@ -278,17 +277,17 @@
 		 <div class="parc-marg">
 
 		  <h2><strong>PARCEIROS E DIFERENCIAIS:</strong></h2>
-		  <div class="tam_desta"> <a href="http://www.creditouniversitario.com.br" target="_self"><img src="img/pravaler.jpg" alt="Parceiro Pravaler" title="Pravaler"/></a> </div>
+		  <div class="tam_desta"> <a href="http://www.creditouniversitario.com.br" target="_self"><img src="/static/pravaler.jpg" alt="Parceiro Pravaler" title="Pravaler"/></a> </div>
 
-		  <div class="tam_desta"> <a href="http://sisfiesportal.mec.gov.br/" target="_self"><img src="img/fies.jpg" alt="Parceiro FIES" title="FIES"/></a> </div>
+		  <div class="tam_desta"> <a href="http://sisfiesportal.mec.gov.br/" target="_self"><img src="/static/fies.jpg" alt="Parceiro FIES" title="FIES"/></a> </div>
 
-		  <div class="tam_desta"> <a href="http://www.creditouniversitario.com.br" target="_self"><img src="img/pravaler.jpg" alt="Parceiro Pravaler" title="Pravaler"/></a> </div>
+		  <div class="tam_desta"> <a href="http://www.creditouniversitario.com.br" target="_self"><img src="/static/pravaler.jpg" alt="Parceiro Pravaler" title="Pravaler"/></a> </div>
 
-		  <div class="tam_desta"> <a href="http://sisfiesportal.mec.gov.br/" target="_self"><img src="img/fies.jpg" alt="Parceiro FIES" title="FIES"/></a> </div>
+		  <div class="tam_desta"> <a href="http://sisfiesportal.mec.gov.br/" target="_self"><img src="/static/fies.jpg" alt="Parceiro FIES" title="FIES"/></a> </div>
 
-		  <div class="tam_desta"> <a href="http://www.creditouniversitario.com.br" target="_self"><img src="img/pravaler.jpg" alt="Parceiro Pravaler" title="Pravaler"/></a> </div>
+		  <div class="tam_desta"> <a href="http://www.creditouniversitario.com.br" target="_self"><img src="/static/pravaler.jpg" alt="Parceiro Pravaler" title="Pravaler"/></a> </div>
 
-		  <div class="tam_desta"> <a href="http://sisfiesportal.mec.gov.br/" target="_self"><img src="img/fies.jpg" alt="Parceiro FIES" title="FIES"/></a> </div>
+		  <div class="tam_desta"> <a href="http://sisfiesportal.mec.gov.br/" target="_self"><img src="/static/fies.jpg" alt="Parceiro FIES" title="FIES"/></a> </div>
 
 		  </div>
 	</div>
@@ -314,34 +313,34 @@
 
 
 	</div>
+	<p> {{ usuario }} </p>
+	<ul>
+		{% for curso in cursos %}
+			{% if curso.ativo %}
+		<li class="{{ curso.classe }}" > {{ curso.nome }} - {{ curso.tipo }} </li>
+			{% endif %}
+		{% endfor %}
+	
+	
+	</ul>
+	{% if perfil == 'aluno' %}
+		<p>Conteúdo para Alunos!</p>
+	{% elif perfil == 'professor' %}
+		<p>Conteúdo para Professores!</p>
+	{% else %}
+		<p>Conteúdo para Coodenadores!</p>
+	{% endif %}
 </section> 
-		<p> {{ usuario }} </p>
-		<ul>
-			{% for curso in cursos %}
-			    {% if curso.ativo %}
-			<li class="{{ curso.classe }}" > {{ curso.nome }} - {{ curso.tipo }} </li>
-		        {% endif %}
-			{% endfor %}
 
-
-		</ul>
-		{% if perfil == 'aluno' %}
-			<p>Conteúdo para Alunos!</p>
-		{% elif perfil == 'professor' %}
-			<p>Conteúdo para Professores!</p>
-		{% else %}
-		    <p>Conteúdo para Coodenadores!</p>
-		{% endif %}
-    {% endblock %}
-</main>>
 <footer>
 		
         <div class="addfooter"></div>
          
 </footer>
 
+
 </body>
 
-<script src="js/menurepon.js"></script>
+<script src="/static/menurepon.js"></script>
 
 </html>

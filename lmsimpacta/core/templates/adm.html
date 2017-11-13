@@ -15,14 +15,14 @@ Luan Millian Gonçalves
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 	<!-- /MediaQuery -->
 
-	<link rel="stylesheet" type="text/css" href="css/estilo.css">
-	<link rel="stylesheet" href="css/base.css">
-	<link rel="stylesheet" type="text/css" href="css/styles.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="/static/estilo.css">
+	<link rel="stylesheet" href="/static/base.css">
+	<link rel="stylesheet" type="text/css" href="/static/styles.css" media="all" />
   
-   	<link rel="stylesheet" href="css/cont-cursos.css">
+   	<link rel="stylesheet" href="/static/cont-cursos.css">
   
     <!-- jQuery -->
-    <script src="js/formatar-data-tel.js"></script> 
+    <script src="/static/formatar-data-tel.js"></script> 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script> 
     
 	<!-- Adicionar HEADER e FOOTER-->
@@ -69,7 +69,7 @@ Luan Millian Gonçalves
         {% block main %}
  
  <div class="img_cursos">
-			<img src="img/cursos/adm.png">
+			<img src="/static/adm.png">
 			
 			<div class="caixa_curs">
 					<div class="titulo_curs">
@@ -96,7 +96,7 @@ Luan Millian Gonçalves
 	 
 	 <div class="info_curso">
 		 <div class="img_curso_desc">
-			<img src="img/cursos/relogio.png">
+			<img src="/static/relogio.png">
 		 </div>
 				<div class="text">
 					<p>
@@ -109,7 +109,7 @@ Luan Millian Gonçalves
 	 
 	 <div class="info_curso">
 		 <div class="img_curso_desc">
-			<img src="img/cursos/calendario.png">
+			<img src="/static/calendario.png">
 		 </div>
 				<div class="text">
 					<p>
@@ -268,19 +268,14 @@ Luan Millian Gonçalves
 </section>  
 
 
-{% endblock %}
-</main>>	
-
-
-
 
 <footer>
 	
 		<div class="addfooter"></div>
          
 </footer>
-
-
+{% endblock %}
+</main>>
 </body>
 
 

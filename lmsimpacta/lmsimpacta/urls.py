@@ -15,17 +15,23 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
-from core.views import index, contato, cursos, ads, adm, enfermagem, fisioterapia
-
-
+from core.views import index, contato, curso, ads, adm, enfermagem, fisioterapia, footer, header, institucional, new1, noticias, detalhe_adm, detalhe_ads, detalhe_enf
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', index),
     url(r'^contato', contato),
-    url(r'^cursos', cursos),
+    url(r'^curso', curso),
     url(r'^ads', ads),
     url(r'^adm', adm),
     url(r'^enfermagem', enfermagem),
-    url(r'^fisioterapia', fisioterapia)
+    url(r'^footer', footer),
+    url(r'^header', header),
+    url(r'^institucional', institucional),
+    url(r'^new1', new1),
+    url(r'^noticias', noticias),
+    url(r'^fisioterapia', fisioterapia),
+    url(r'^detalhe_adm', detalhe_adm),
+    url(r'^detalhe_ads', detalhe_ads),
+    url(r'^detalhe_enf', detalhe_enf)
 ]

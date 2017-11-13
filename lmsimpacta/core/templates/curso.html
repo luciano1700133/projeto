@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<!-- AUTOR = Luciano Carlos dos Anjos Santos
+ DATA = 29/08/2017-->
+ <title>USF</title> 
+ <link rel="stylesheet" href="/static/site.css" />
+ <link rel="stylesheet" type="text/css" href="/static/styles.css" media="all" />
+ <meta charset="utf-8"/>
+ </head>
+ 
+	 <!-- MediaQuery -->
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	 <!-- /MediaQuery -->
+ 
+	 <link rel="stylesheet" type="text/css" href="/static/estilo.css">
+	 <link rel="stylesheet" href="/static/base.css">
+	 <link rel="stylesheet" type="text/css" href="/static/styles.css" media="all" />
+   
+		<link rel="stylesheet" href="/static/cont-form.css">
+   
+	 <!-- jQuery -->
+	 <script src="/static/formatar-data-tel.js"></script> 
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script> 
+	 
+	 <!-- Adicionar HEADER e FOOTER-->
+	 <script>
+	 $(function() {
+		 $(".addheader").load("header.html");
+		 $(".addfooter").load("footer.html");
+	 })
+	 </script>
+	 <!-- /Adicionar HEADER e FOOTER-->
+	 
+ 
+	 <!-- /Java Script -->
+ 
+		 
+ 
+ <body>
+		 
+	 
+ <header>
+	
+		
+ <div class="addheader"></div>
+		 
+ </header> 
+ 
+
+<section>
+
+       
+
+    
+        
+        <form method="POST" action="">
+           {% csrf_token %}
+           {% for input in form %}  
+           <div>
+              {{ input.label_tag}}
+              {{ input }}
+              {{ input.errors }}
+           </div>
+          {% endfor %}
+           <button type"submit">Enviar</button>>
+        </form>>
+    
+
+                    <div class="sepContainer2"></div>
+
+	</p>
+	<center>
+		<div id="title">
+ 
+                </div>
+    <h1>Cursos</h1>
+		<div id = "curso">
+			<div id = "curso">
+
+    	
+
+	
+	<a href = "ads.html"> Analise e Desenvolvimento de Sistemas </href></a>
+	<p> </p>
+	
+	<a href = "adm.html"> Administração </href></a>
+	<p> </p>
+
+	<a href = "enfermagem.html"> Enfermagem </href></a>
+	<p> </p>
+
+	<a href = "fisioterapia.html"> Fisioterapia </href></a>
+	<p> </p>
+
+	
+	
+	
+	
+	
+	
+	
+	
+
+ </section>																																			
+ 																																
+                                                                                                                                            
+<footer>
+		
+			<div class="addfooter"></div>
+			 
+</footer>
+	
+	
+</body>
+	
+	
+	
+</html>

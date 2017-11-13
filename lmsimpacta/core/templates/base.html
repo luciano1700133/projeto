@@ -14,11 +14,11 @@
 	<!-- /MediaQuery -->
 	
 	<!-- CSS's -->
-	<link rel="stylesheet" type="text/css" href="css/estilo.css">
-	<link rel="stylesheet" href="css/base.css">
-	<link rel="stylesheet" type="text/css" href="css/styles.css" media="all" />
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/menuresponsivo.css">
+	<link rel="stylesheet" type="text/css" href="/static/estilo.css">
+	<link rel="stylesheet" href="/static/base.css">
+	<link rel="stylesheet" type="/static/css" href="/static/styles.css" media="all" />
+    <link rel="stylesheet" href="/static/normalize.css">
+    <link rel="stylesheet" href="/static/menuresponsivo.css">
     <!-- /CSS's -->
   
     <!-- Java Script -->    
@@ -26,7 +26,7 @@
      
     
     <!-- SLIDE -->
-    <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>    
+    <script type="text/javascript" src="/static/jquery.flexslider-min.js"></script>    
     <script type="text/javascript" charset="utf-8">
 				$(function() {
 		$(".addheader").load("header.html");
@@ -66,17 +66,21 @@
 
 <body>
 
-
+	
 	
 	
 <header>
+
+	
        
    <div class="menu-container">
+
+	
 				
 			<ul class="menu">
 			 
 				<div class="logotop">
-					<li><a href="index.html"><img src="img/logo-usf.png" alt="Logo" width="110"></a></li>
+					<li><a href="index.html"><img src="/static/logo-usf.png" alt="Logo" width="110"></a></li>
 				</div>
 						
 							<div class="alinhar">
@@ -96,18 +100,21 @@
 							 </li>
 						<li><a href="#">Estude na USF</a></li>
 						<li><a href="noticias.html">Noticias</a></li>
-						<li><a href="contato.html">Contato</a></li>
-						<li><a href="/login">Login</a>
-					
+                        <li><a href="contato.html">Contato</a></li>
+                        {% if not usuario %}
+                             <li><a href="/login">Login</a>
+					    {% endif %}
 					</div>
 					
 					
 				
 	 		</ul>
-	 		
+	 		<main>
+					
+					{% block main %}
 	 		<ul class="menuadd">
             	
-            		<a href="#autenticação"><img class="imglog" src="img/autenticacao-login.png" alt="autenticação"></a>
+            		<a href="#autenticação"><img class="imglog" src="/static/autenticacao-login.png" alt="autenticação"></a>
 						
 						<div id="autenticação" class="lightbox">
 							
@@ -213,7 +220,7 @@
 				<ul class="slides">
 
 					<li>
-					<a href="#"><img src="images/slider/slide1.jpg" alt="" title=""/></a>
+					<a href="#"><img src="/static/slider/slide1.jpg" alt="" title=""/></a>
 						<div class="caixa">
 							 <div class="titulo">
 							 <h2>Administração</h2><p> Seja mais do que somente mais um administrador do mercado. Faça um curso reconhecido pelo MEC com conceito máximo </p>
@@ -222,7 +229,7 @@
 					</li>
 
 					<li>
-					<a href="#"><img src="images/slider/slide2.jpg" alt="" title=""/></a>
+					<a href="#"><img src="/static/slider/slide2.jpg" alt="" title=""/></a>
 						<div class="caixa">
 							 <div class="titulo">
 							 <h2>Nutrição</h2><p>O curso de nutrição da universidade paulista tem como objetivos formar nutricionistas com conhecimentos, competências e habilidades</p></div>
@@ -234,9 +241,7 @@
 		 </div>
 	</div>  
 </header> 
-<main>
 
-{% block main %}
   
 <section> 
 		<div class="conteudo">
@@ -276,17 +281,17 @@
 		 <div class="parc-marg">
 
 		  <h2><strong>PARCEIROS E DIFERENCIAIS:</strong></h2>
-		  <div class="tam_desta"> <a href="http://www.creditouniversitario.com.br" target="_self"><img src="img/pravaler.jpg" alt="Parceiro Pravaler" title="Pravaler"/></a> </div>
+		  <div class="tam_desta"> <a href="http://www.creditouniversitario.com.br" target="_self"><img src="/static/pravaler.jpg" alt="Parceiro Pravaler" title="Pravaler"/></a> </div>
 
-		  <div class="tam_desta"> <a href="http://sisfiesportal.mec.gov.br/" target="_self"><img src="img/fies.jpg" alt="Parceiro FIES" title="FIES"/></a> </div>
+		  <div class="tam_desta"> <a href="http://sisfiesportal.mec.gov.br/" target="_self"><img src="/static/fies.jpg" alt="Parceiro FIES" title="FIES"/></a> </div>
 
-		  <div class="tam_desta"> <a href="http://www.creditouniversitario.com.br" target="_self"><img src="img/pravaler.jpg" alt="Parceiro Pravaler" title="Pravaler"/></a> </div>
+		  <div class="tam_desta"> <a href="http://www.creditouniversitario.com.br" target="_self"><img src="/static/pravaler.jpg" alt="Parceiro Pravaler" title="Pravaler"/></a> </div>
 
-		  <div class="tam_desta"> <a href="http://sisfiesportal.mec.gov.br/" target="_self"><img src="img/fies.jpg" alt="Parceiro FIES" title="FIES"/></a> </div>
+		  <div class="tam_desta"> <a href="http://sisfiesportal.mec.gov.br/" target="_self"><img src="/static/fies.jpg" alt="Parceiro FIES" title="FIES"/></a> </div>
 
-		  <div class="tam_desta"> <a href="http://www.creditouniversitario.com.br" target="_self"><img src="img/pravaler.jpg" alt="Parceiro Pravaler" title="Pravaler"/></a> </div>
+		  <div class="tam_desta"> <a href="http://www.creditouniversitario.com.br" target="_self"><img src="/static/pravaler.jpg" alt="Parceiro Pravaler" title="Pravaler"/></a> </div>
 
-		  <div class="tam_desta"> <a href="http://sisfiesportal.mec.gov.br/" target="_self"><img src="img/fies.jpg" alt="Parceiro FIES" title="FIES"/></a> </div>
+		  <div class="tam_desta"> <a href="http://sisfiesportal.mec.gov.br/" target="_self"><img src="/static/fies.jpg" alt="Parceiro FIES" title="FIES"/></a> </div>
 
 		  </div>
 	</div>
@@ -313,16 +318,17 @@
 
 	</div>
 </section> 
-    {% endblock %}
-</main>>
+
+    
 <footer>
 		
         <div class="addfooter"></div>
          
 </footer>
+{% endblock %}
+</main>>
 
 </body>
-
-<script src="js/menurepon.js"></script>
+<script src="/static/menurepon.js"></script>
 
 </html>

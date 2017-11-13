@@ -1,7 +1,7 @@
 from django.shortcuts import render
 
 from core.models import Curso
-from core.forms import ContatoForm
+from core.forms import ContatoForm, CursoForm
 
 def index(request):
     contexto = {
@@ -10,6 +10,19 @@ def index(request):
         "cursos":Curso.objects.all()
     }
     return render(request,"index.html",contexto)
+
+def curso(request):
+    if request.POST:
+        form = CursoForm(request.POST)
+        if form.is_valid():
+            form.save()
+    else:
+        form = CursoForm()
+    
+    contexto = {
+        "form":form
+    }
+    return render(request,"curso.html",contexto)
 
 def contato(request):
     if request.POST:
@@ -22,10 +35,7 @@ def contato(request):
     contexto = {
         "form":form
     }
-    return render(request,"contato.html")
-
-def cursos(request):
-    return render(request,"cursos.html")
+    return render(request,"contato.html",contexto)
 
 def ads(request):
     return render(request,"ads.html")
@@ -38,3 +48,36 @@ def enfermagem(request):
 
 def fisioterapia(request):
     return render(request,"fisioterapia.html")
+
+def noticias(request):
+    return render(request,"noticias.html")
+
+def new1(request):
+    return render(request,"new1.html")
+
+def institucional(request):
+    return render(request,"institucional.html")
+
+def header(request):
+    return render(request,"header.html")
+
+def footer(request):
+    return render(request,"footer.html")
+
+def esqueceu_a_senha(request):
+    return render(request,"esqueceu-a-senha.html")
+
+def detalhe_enf(request):
+    return render(request,"detalhe_enf.html")
+
+def detalhe_ads(request):
+    return render(request,"detalhe_ads.html")
+
+def detalhe_adm(request):
+    return render(request,"detalhe_adm.html")
+
+
+
+
+
+

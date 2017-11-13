@@ -1,5 +1,14 @@
 from django import forms
 
+from core.models import Curso
+
+class CursoForm(forms.ModelForm):
+
+    class Meta:
+        model = Curso
+        fields = "__all__"
+
+
 class ContatoForm(forms.Form):
     nome = forms.CharField(label="Nome", required=True)
     email = forms.EmailField(label="E-mail", help_text="Informe um E-mail válido")
