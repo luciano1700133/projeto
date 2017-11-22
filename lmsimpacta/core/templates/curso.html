@@ -54,18 +54,18 @@
        
 
     
-        
-        <form method="POST" action="">
-           {% csrf_token %}
-           {% for input in form %}  
-           <div>
-              {{ input.label_tag}}
-              {{ input }}
-              {{ input.errors }}
-           </div>
-          {% endfor %}
-           <button type"submit">Enviar</button>>
-        </form>>
+     
+<form method="POST" action="">
+    {% csrf_token %}
+    {% for input in form %}  
+    <div>
+        {{ input.label_tag}}
+        {{ input }}
+        {{ input.errors }}
+    </div>
+    {% endfor %}
+    <button type"submit">Enviar</button>>
+</form>>
     
 
                     <div class="sepContainer2"></div>

@@ -123,4 +123,8 @@ STATIC_URL = '/static/'
 
 # Login
 AUTH_USER_MODEL = 'core.Usuario'
+LOGIN_URL = 'login'
+LOGIN_REDIRECT_URL = 'index'
+LOGOUT_URL = 'logout'
+
 
